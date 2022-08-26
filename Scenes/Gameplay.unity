@@ -5421,6 +5421,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 809970357}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1028407084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1028407084, guid: 7803857ded372a345a5c44389094b397,
+    type: 3}
+  m_PrefabInstance: {fileID: 1796194376769651748}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1152043977
 GameObject:
   m_ObjectHideFlags: 0
@@ -10634,24 +10640,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093315669}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1309196526717851 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1795242942462578623, guid: 7803857ded372a345a5c44389094b397,
-    type: 3}
-  m_PrefabInstance: {fileID: 1796194376769651748}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1309196526717852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309196526717851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b983826838d775e4f99a108f87494a2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1796194376769651748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10659,6 +10647,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1309196526717852, guid: 7803857ded372a345a5c44389094b397, type: 3}
+      propertyPath: flameLight
+      value: 
+      objectReference: {fileID: 1028407084}
     - target: {fileID: 1793520256401481879, guid: 7803857ded372a345a5c44389094b397,
         type: 3}
       propertyPath: m_LocalPosition.x
