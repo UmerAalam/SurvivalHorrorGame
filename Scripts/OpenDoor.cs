@@ -15,14 +15,14 @@ public class OpenDoor : MonoBehaviour
     }
     private void OnMouseOver()
     {
-        if(theDistance <= 3)
+        if(theDistance <= 2)
         {
             openDoorText.SetActive(true);
         }
         if(Input.GetButtonDown("Action"))
         {
             Debug.Log("Action is Working");
-            if(theDistance <= 3)
+            if(theDistance <= 2)
             {
                 this.GetComponent<BoxCollider>().enabled = false;
                 openDoorText.SetActive(false);
