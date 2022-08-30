@@ -15,6 +15,20 @@ public class OpenDoor : MonoBehaviour
     }
     private void OnMouseOver()
     {
-        
+        if(theDistance <= 3)
+        {
+            openDoorText.SetActive(true);
+        }
+        if(Input.GetButtonDown("Action"))
+        {
+            Debug.Log("Action is Working");
+            if(theDistance <= 3)
+            {
+                GetComponent<BoxCollider>().enabled = false;
+                openDoorText.SetActive(false);
+                doorObject.GetComponent<Animation>().Play("DoorFirstOpen");
+                creakSound.Play();
+            }
+        }
     }
 }
