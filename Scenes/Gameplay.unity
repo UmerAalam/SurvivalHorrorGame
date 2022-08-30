@@ -11112,10 +11112,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 922675537, guid: aafff4cc426a08d42bab2ecc09004450, type: 3}
-      propertyPath: m_Name
-      value: DoorTrigger
-      objectReference: {fileID: 0}
     - target: {fileID: 922675540, guid: aafff4cc426a08d42bab2ecc09004450, type: 3}
       propertyPath: openDoorText
       value: 
@@ -11124,6 +11120,10 @@ PrefabInstance:
       propertyPath: creakSound
       value: 
       objectReference: {fileID: 8187588757043919059}
+    - target: {fileID: 922675540, guid: aafff4cc426a08d42bab2ecc09004450, type: 3}
+      propertyPath: doorObject
+      value: 
+      objectReference: {fileID: 1950244388545070281}
     - target: {fileID: 1950244387433247290, guid: aafff4cc426a08d42bab2ecc09004450,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11186,6 +11186,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aafff4cc426a08d42bab2ecc09004450, type: 3}
+--- !u!1 &1950244388545070281 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1950244388825552462, guid: aafff4cc426a08d42bab2ecc09004450,
+    type: 3}
+  m_PrefabInstance: {fileID: 1950244388545070278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8187588757043919055
 PrefabInstance:
   m_ObjectHideFlags: 0

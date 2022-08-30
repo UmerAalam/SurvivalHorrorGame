@@ -24,7 +24,7 @@ public class OpenDoor : MonoBehaviour
             Debug.Log("Action is Working");
             if(theDistance <= 3)
             {
-                GetComponent<BoxCollider>().enabled = false;
+                this.GetComponent<BoxCollider>().enabled = false;
                 openDoorText.SetActive(false);
                 doorObject.GetComponent<Animation>().Play("DoorFirstOpen");
                 creakSound.Play();
