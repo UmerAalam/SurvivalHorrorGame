@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class OpenDoor : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    float theDistance;
+    [SerializeField] GameObject openDoorText;
+    [SerializeField] GameObject doorObject;
+    [SerializeField] AudioSource creakSound;
 
-    // Update is called once per frame
     void Update()
+    {
+        theDistance = PlayerCasting.DistanceFromTarget;  
+    }
+    private void OnMouseOver()
     {
         
     }
