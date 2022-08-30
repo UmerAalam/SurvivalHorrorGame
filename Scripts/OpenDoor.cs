@@ -31,4 +31,8 @@ public class OpenDoor : MonoBehaviour
             }
         }
     }
+    private void OnMouseExit()
+    {
+      openDoorText.SetActive(false);
+    }
 }
