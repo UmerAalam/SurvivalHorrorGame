@@ -11112,6 +11112,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 922675537, guid: aafff4cc426a08d42bab2ecc09004450, type: 3}
+      propertyPath: m_Name
+      value: DoorTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 922675540, guid: aafff4cc426a08d42bab2ecc09004450, type: 3}
+      propertyPath: openDoorText
+      value: 
+      objectReference: {fileID: 813059335}
+    - target: {fileID: 922675540, guid: aafff4cc426a08d42bab2ecc09004450, type: 3}
+      propertyPath: creakSound
+      value: 
+      objectReference: {fileID: 8187588757043919059}
     - target: {fileID: 1950244387433247290, guid: aafff4cc426a08d42bab2ecc09004450,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11172,11 +11184,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
-    - target: {fileID: 1950244388825552461, guid: aafff4cc426a08d42bab2ecc09004450,
-        type: 3}
-      propertyPath: m_PlayAutomatically
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aafff4cc426a08d42bab2ecc09004450, type: 3}
 --- !u!1001 &8187588757043919055
@@ -11186,6 +11193,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8187588757104372342, guid: b3276f6109147d2488aa40ade072caa3,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187588757104372342, guid: b3276f6109147d2488aa40ade072caa3,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 67747cd88466ba44b8208854a90e2ff8, type: 3}
     - target: {fileID: 8187588757106143158, guid: b3276f6109147d2488aa40ade072caa3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11248,3 +11265,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
+--- !u!82 &8187588757043919059 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8187588757104372342, guid: b3276f6109147d2488aa40ade072caa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8187588757043919055}
+  m_PrefabAsset: {fileID: 0}
