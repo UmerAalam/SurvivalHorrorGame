@@ -11119,11 +11119,15 @@ PrefabInstance:
     - target: {fileID: 922675540, guid: aafff4cc426a08d42bab2ecc09004450, type: 3}
       propertyPath: creakSound
       value: 
-      objectReference: {fileID: 8187588757043919059}
+      objectReference: {fileID: 8300000, guid: 67747cd88466ba44b8208854a90e2ff8, type: 3}
     - target: {fileID: 922675540, guid: aafff4cc426a08d42bab2ecc09004450, type: 3}
       propertyPath: doorObject
       value: 
       objectReference: {fileID: 1950244388545070281}
+    - target: {fileID: 922675540, guid: aafff4cc426a08d42bab2ecc09004450, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 8187588757043919059}
     - target: {fileID: 1950244387433247290, guid: aafff4cc426a08d42bab2ecc09004450,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11132,7 +11136,7 @@ PrefabInstance:
     - target: {fileID: 1950244387433247290, guid: aafff4cc426a08d42bab2ecc09004450,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.142
+      value: 0.151
       objectReference: {fileID: 0}
     - target: {fileID: 1950244387433247290, guid: aafff4cc426a08d42bab2ecc09004450,
         type: 3}
@@ -11179,6 +11183,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1950244387433247290, guid: aafff4cc426a08d42bab2ecc09004450,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 26
+      objectReference: {fileID: 0}
     - target: {fileID: 1950244387433737754, guid: aafff4cc426a08d42bab2ecc09004450,
         type: 3}
       propertyPath: m_Name
@@ -11199,16 +11208,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8187588757104372342, guid: b3276f6109147d2488aa40ade072caa3,
-        type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8187588757104372342, guid: b3276f6109147d2488aa40ade072caa3,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 67747cd88466ba44b8208854a90e2ff8, type: 3}
     - target: {fileID: 8187588757106143158, guid: b3276f6109147d2488aa40ade072caa3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11269,6 +11268,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPSController
       objectReference: {fileID: 0}
+    - target: {fileID: 8244853387617944586, guid: b3276f6109147d2488aa40ade072caa3,
+        type: 3}
+      propertyPath: doorOpen
+      value: 
+      objectReference: {fileID: 8300000, guid: 67747cd88466ba44b8208854a90e2ff8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
 --- !u!82 &8187588757043919059 stripped

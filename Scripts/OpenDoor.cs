@@ -7,7 +7,7 @@ public class OpenDoor : MonoBehaviour
     float theDistance;
     [SerializeField] GameObject openDoorText;
     [SerializeField] GameObject doorObject;
-    [SerializeField] AudioSource creakSound;
+    [SerializeField] AudioSource audioSource;
 
     void Update()
     {
@@ -27,7 +27,7 @@ public class OpenDoor : MonoBehaviour
                 this.GetComponent<BoxCollider>().enabled = false;
                 openDoorText.SetActive(false);
                 doorObject.GetComponent<Animation>().Play("DoorFirstOpen");
-                creakSound.Play();
+                audioSource.PlayOneShot(AudioClipsController.instance.doorOpen);
             }
         }
     }
