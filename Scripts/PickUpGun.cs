@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PickUpGun : MonoBehaviour
 {
-    public float TheDistance;
+    [HideInInspector] public float TheDistance;
     public GameObject ActionDisplay;
     public GameObject ActionText;
     public GameObject FakePistol;

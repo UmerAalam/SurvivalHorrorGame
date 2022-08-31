@@ -5,7 +5,7 @@ using UnityEngine;
 public class OpenDoor : MonoBehaviour
 {
 
-    public float TheDistance;
+    [HideInInspector] public float TheDistance;
     public GameObject ActionDisplay;
     public GameObject ActionText;
     public GameObject TheDoor;

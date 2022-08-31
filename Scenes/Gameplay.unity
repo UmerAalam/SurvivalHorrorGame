@@ -112,6 +112,70 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &7896121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7896122}
+  - component: {fileID: 7896123}
+  - component: {fileID: 7896124}
+  m_Layer: 0
+  m_Name: PistolTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7896122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7896121}
+  m_LocalRotation: {x: -0.18875371, y: -0.18875371, z: -0.6814485, w: 0.6814485}
+  m_LocalPosition: {x: -0.23333198, y: 0.10928321, z: -3.36672}
+  m_LocalScale: {x: 25.333332, y: 9.333331, z: 25.33333}
+  m_Children: []
+  m_Father: {fileID: 598939871}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7896123
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7896121}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7896124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7896121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29d3d531f3e4d645bc24a7da22990f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TheDistance: 0
+  ActionDisplay: {fileID: 2131489437}
+  ActionText: {fileID: 592616553}
+  FakePistol: {fileID: 598939872}
+  RealPistol: {fileID: 1229522285}
+  GuideArrow: {fileID: 1416536541}
+  ExtraCross: {fileID: 338537446}
 --- !u!1 &37862864
 GameObject:
   m_ObjectHideFlags: 0
@@ -5831,6 +5895,29 @@ Transform:
   m_Father: {fileID: 1680811615}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &563293981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 922675537, guid: aafff4cc426a08d42bab2ecc09004450,
+    type: 3}
+  m_PrefabInstance: {fileID: 1950244388545070278}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &563293983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563293981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd5e16423becd844b840330d801cb96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TheDistance: 0
+  ActionDisplay: {fileID: 2131489437}
+  ActionText: {fileID: 592616553}
+  TheDoor: {fileID: 1950244388545070281}
+  CreakSound: {fileID: 8187588757043919059}
 --- !u!1 &592616553
 GameObject:
   m_ObjectHideFlags: 0
@@ -5949,7 +6036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 6f8ee9e57f0ae87429c40e77c8b75822, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 6f8ee9e57f0ae87429c40e77c8b75822, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5980,6 +6067,12 @@ PrefabInstance:
 --- !u!4 &598939871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 6f8ee9e57f0ae87429c40e77c8b75822,
+    type: 3}
+  m_PrefabInstance: {fileID: 598939870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &598939872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 6f8ee9e57f0ae87429c40e77c8b75822,
     type: 3}
   m_PrefabInstance: {fileID: 598939870}
   m_PrefabAsset: {fileID: 0}
@@ -6828,6 +6921,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152043977}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1229522285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8187588756782413460, guid: b3276f6109147d2488aa40ade072caa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8187588757043919055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1245597140
 GameObject:
   m_ObjectHideFlags: 0
@@ -13181,23 +13280,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
-    - target: {fileID: 1950244388545070282, guid: aafff4cc426a08d42bab2ecc09004450,
-        type: 3}
-      propertyPath: ActionDisplay
-      value: 
-      objectReference: {fileID: 2131489437}
-    - target: {fileID: 1950244388545070282, guid: aafff4cc426a08d42bab2ecc09004450,
-        type: 3}
-      propertyPath: ActionText
-      value: 
-      objectReference: {fileID: 592616553}
-    - target: {fileID: 1950244388545070282, guid: aafff4cc426a08d42bab2ecc09004450,
-        type: 3}
-      propertyPath: CreakSound
-      value: 
-      objectReference: {fileID: 8187588757043919059}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6366100184901679345, guid: aafff4cc426a08d42bab2ecc09004450, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: aafff4cc426a08d42bab2ecc09004450, type: 3}
+--- !u!1 &1950244388545070281 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1950244388825552462, guid: aafff4cc426a08d42bab2ecc09004450,
+    type: 3}
+  m_PrefabInstance: {fileID: 1950244388545070278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8187588757043919055
 PrefabInstance:
   m_ObjectHideFlags: 0

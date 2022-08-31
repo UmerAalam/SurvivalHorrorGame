@@ -270,7 +270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1950244388825552463}
   - component: {fileID: 1950244388825552461}
-  - component: {fileID: 1950244388545070282}
+  - component: {fileID: 6366100184901679345}
   m_Layer: 0
   m_Name: DoorHinge
   m_TagString: Untagged
@@ -309,7 +309,7 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &1950244388545070282
+--- !u!114 &6366100184901679345
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -324,5 +324,5 @@ MonoBehaviour:
   TheDistance: 0
   ActionDisplay: {fileID: 0}
   ActionText: {fileID: 0}
-  TheDoor: {fileID: 922675537}
+  TheDoor: {fileID: 0}
   CreakSound: {fileID: 0}
