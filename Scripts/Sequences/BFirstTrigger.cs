@@ -10,10 +10,10 @@ public class BFirstTrigger : MonoBehaviour
     [SerializeField] GameObject textBox;
     [SerializeField] GameObject guideArrow;
 
-    void OnTriggerEnter()
+    private void OnTriggerEnter(Collider other)
     {
-      thePlayer.GetComponent<FirstPersonController>().enabled = false;
-      StartCoroutine(ScenePlayer());
+        thePlayer.GetComponent<FirstPersonController>().enabled = false;
+        StartCoroutine(ScenePlayer());
     }
     IEnumerator ScenePlayer()
     {
