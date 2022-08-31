@@ -9,7 +9,12 @@ public class BFirstTrigger : MonoBehaviour
     [SerializeField] GameObject thePlayer;
     [SerializeField] GameObject textBox;
     [SerializeField] GameObject guideArrow;
+    bool isTrigger;
 
+    private void Start()
+    {
+        isTrigger = true;
+    }
     IEnumerator ScenePlayer()
     {
         Debug.Log("I called ScenePlayer Function!");
@@ -21,8 +26,12 @@ public class BFirstTrigger : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-      thePlayer.GetComponent<FirstPersonController>().enabled = false;
-      StartCoroutine(ScenePlayer());
+        if(isTrigger)
+        {
+        thePlayer.GetComponent<FirstPersonController>().enabled = false;
+        StartCoroutine(ScenePlayer());
+            isTrigger = false;
+        }
     }
 
 }
