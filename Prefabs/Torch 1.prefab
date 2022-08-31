@@ -79,11 +79,11 @@ Animation:
   m_GameObject: {fileID: 1028407084}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 2bc97b55e37991a49b94fba8f1123b7f, type: 2}
+  m_Animation: {fileID: 7400000, guid: 09be077371489df4ead81a077cc39c12, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 2bc97b55e37991a49b94fba8f1123b7f, type: 2}
-  - {fileID: 7400000, guid: b7a00916a6389444c9cbc6832aaa050f, type: 2}
-  - {fileID: 7400000, guid: c65a644fa6f7c894cb16fdd5b0231dae, type: 2}
+  - {fileID: 7400000, guid: 09be077371489df4ead81a077cc39c12, type: 2}
+  - {fileID: 7400000, guid: 61fc4a0a7dbf7da44a34ee2c4086f28c, type: 2}
+  - {fileID: 7400000, guid: ee4d8c3ead9cc2d4bbdd52a199af2ca7, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -182,7 +182,7 @@ MeshCollider:
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
-  m_Mesh: {fileID: 4300520, guid: 628e5212ccbe5044ba8b70740d37394e, type: 3}
+  m_Mesh: {fileID: 4300174, guid: fd75e63c14c4540438372a6844af68b6, type: 3}
 --- !u!114 &1309196526717852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b983826838d775e4f99a108f87494a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flameLight: {fileID: 0}
+  flameLight: {fileID: 1028407084}
 --- !u!1 &1796194376068924152
 GameObject:
   m_ObjectHideFlags: 0

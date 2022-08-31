@@ -22,6 +22,6 @@ public class AOpening : MonoBehaviour
         textBox.GetComponent<Text>().text = "I need to get out of here.";
         yield return new WaitForSeconds(2f);
         textBox.GetComponent<Text>().text = "";
-        thePlayer.GetComponent<FirstPersonController>().enabled = false;
+        thePlayer.GetComponent<FirstPersonController>().enabled = true;
     }
 }
