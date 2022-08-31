@@ -13318,8 +13318,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPSController
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1229522286, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
 --- !u!82 &8187588757043919059 stripped
 AudioSource:
