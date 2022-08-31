@@ -1,38 +1,52 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PickUpGun : MonoBehaviour
 {
-    float theDistance;
-    [SerializeField] GameObject openDoorText;
-    [SerializeField] GameObject doorObject;
-    [SerializeField] AudioSource audioSource;
+    public float TheDistance;
+    public GameObject ActionDisplay;
+    public GameObject ActionText;
+    public GameObject FakePistol;
+    public GameObject RealPistol;
+    public GameObject GuideArrow;
+    public GameObject ExtraCross;
 
     void Update()
     {
-        theDistance = PlayerCasting.DistanceFromTarget;  
+        TheDistance = PlayerCasting.DistanceFromTarget;
     }
-    private void OnMouseOver()
+
+    void OnMouseOver()
     {
-        if(theDistance <= 2)
+        if (TheDistance <= 2)
         {
-            openDoorText.SetActive(true);
+            ExtraCross.SetActive(true);
+            ActionText.GetComponent<Text>().text = "Pick Up Pistol";
+            ActionDisplay.SetActive(true);
+            ActionText.SetActive(true);
         }
-        if(Input.GetButtonDown("Action"))
+        if (Input.GetButtonDown("Action"))
         {
-            Debug.Log("Action is Working");
-            if(theDistance <= 2)
+            if (TheDistance <= 2)
             {
                 this.GetComponent<BoxCollider>().enabled = false;
-                openDoorText.SetActive(false);
-                doorObject.GetComponent<Animation>().Play("DoorFirstOpen");
-                audioSource.PlayOneShot(AudioClipsController.instance.doorOpen);
+                ActionDisplay.SetActive(false);
+                ActionText.SetActive(false);
+                FakePistol.SetActive(false);
+                RealPistol.SetActive(true);
+                ExtraCross.SetActive(false);
+                GuideArrow.SetActive(false);
             }
         }
     }
-    private void OnMouseExit()
+
+    void OnMouseExit()
     {
-      openDoorText.SetActive(false);
+        ExtraCross.SetActive(false);
+        ActionDisplay.SetActive(false);
+        ActionText.SetActive(false);
     }
+
 }

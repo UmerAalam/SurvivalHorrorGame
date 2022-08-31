@@ -4,35 +4,41 @@ using UnityEngine;
 
 public class OpenDoor : MonoBehaviour
 {
-    float theDistance;
-    [SerializeField] GameObject openDoorText;
-    [SerializeField] GameObject doorObject;
-    [SerializeField] AudioSource audioSource;
+
+    public float TheDistance;
+    public GameObject ActionDisplay;
+    public GameObject ActionText;
+    public GameObject TheDoor;
+    public AudioSource CreakSound;
 
     void Update()
     {
-        theDistance = PlayerCasting.DistanceFromTarget;  
+        TheDistance = PlayerCasting.DistanceFromTarget;
     }
-    private void OnMouseOver()
+
+    void OnMouseOver()
     {
-        if(theDistance <= 2)
+        if (TheDistance <= 2)
         {
-            openDoorText.SetActive(true);
+            ActionDisplay.SetActive(true);
+            ActionText.SetActive(true);
         }
-        if(Input.GetButtonDown("Action"))
+        if (Input.GetButtonDown("Action"))
         {
-            Debug.Log("Action is Working");
-            if(theDistance <= 2)
+            if (TheDistance <= 2)
             {
                 this.GetComponent<BoxCollider>().enabled = false;
-                openDoorText.SetActive(false);
-                doorObject.GetComponent<Animation>().Play("DoorFirstOpen");
-                audioSource.PlayOneShot(AudioClipsController.instance.doorOpen);
+                ActionDisplay.SetActive(false);
+                ActionText.SetActive(false);
+                TheDoor.GetComponent<Animation>().Play("DoorFirstOpen");
+                CreakSound.Play();
             }
         }
     }
-    private void OnMouseExit()
+
+    void OnMouseExit()
     {
-      openDoorText.SetActive(false);
+        ActionDisplay.SetActive(false);
+        ActionText.SetActive(false);
     }
 }
