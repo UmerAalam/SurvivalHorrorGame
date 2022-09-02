@@ -61,7 +61,7 @@ MonoBehaviour:
   ActionDisplay: {fileID: 0}
   ActionText: {fileID: 0}
   TheDoor: {fileID: 1950244388825552462}
-  CreakSound: {fileID: 0}
+  creakSound: {fileID: 0}
 --- !u!1 &1950244387433737752
 GameObject:
   m_ObjectHideFlags: 0
