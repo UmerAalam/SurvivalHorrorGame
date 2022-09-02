@@ -256,6 +256,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42147552}
   m_CullTransparentMesh: 0
+--- !u!1 &52219671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 52219671, guid: b3276f6109147d2488aa40ade072caa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8187588757043919055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &86167099
 GameObject:
   m_ObjectHideFlags: 0
@@ -6821,6 +6827,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 97ff09c7b47034d4e883b489a0fbd22d,
     type: 3}
   m_PrefabInstance: {fileID: 809970357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &840250858 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 840250858, guid: b3276f6109147d2488aa40ade072caa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8187588757043919055}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &921097879
 GameObject:
@@ -13765,6 +13777,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8187588757043919055}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6107209050857503009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6107209050857503008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dfcab9447904714ba0a190c313ae166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theGun: {fileID: 6107209050857503008}
+  muzzleFlash: {fileID: 52219671}
+  shoot: {fileID: 840250858}
 --- !u!1001 &7321153857138445986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13845,10 +13872,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 52219671, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 840250858, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 5d322eb69400d23458ea0cbaf6822cf4, type: 3}
+    - target: {fileID: 2693437206730424815, guid: b3276f6109147d2488aa40ade072caa3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8187588757106143158, guid: b3276f6109147d2488aa40ade072caa3,
         type: 3}
       propertyPath: m_LocalPosition.x
