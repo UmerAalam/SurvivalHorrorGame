@@ -23,5 +23,9 @@ public class FirePistol : MonoBehaviour
         isFiring = true;
         theGun.GetComponent<Animation>().Play("Shoot");
         muzzleFlash.SetActive(true);
+        muzzleFlash.GetComponent<Animation>().Play("MuzzleFlash");
+        shoot.Play();
+        yield return new WaitForSeconds(0.5f);
+        isFiring = false;
     }
 }
