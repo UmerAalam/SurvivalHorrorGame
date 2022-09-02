@@ -9,7 +9,7 @@ public class OpenDoor : MonoBehaviour
     public GameObject ActionDisplay;
     public GameObject ActionText;
     public GameObject TheDoor;
-    public AudioSource CreakSound;
+    public AudioSource creakSound;
 
     void Update()
     {
@@ -31,7 +31,7 @@ public class OpenDoor : MonoBehaviour
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
                 TheDoor.GetComponent<Animation>().Play("DoorFirstOpen");
-                CreakSound.Play();
+                creakSound.Play();
             }
         }
     }

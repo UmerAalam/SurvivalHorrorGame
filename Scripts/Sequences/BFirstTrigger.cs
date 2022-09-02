@@ -9,11 +9,11 @@ public class BFirstTrigger : MonoBehaviour
     [SerializeField] GameObject thePlayer;
     [SerializeField] GameObject textBox;
     [SerializeField] GameObject guideArrow;
-    bool isTrigger;
+    bool isTriggered;
 
     private void Start()
     {
-        isTrigger = true;
+        isTriggered = true;
     }
     IEnumerator ScenePlayer()
     {
@@ -26,11 +26,11 @@ public class BFirstTrigger : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(isTrigger)
+        if(isTriggered)
         {
         thePlayer.GetComponent<FirstPersonController>().enabled = false;
         StartCoroutine(ScenePlayer());
-            isTrigger = false;
+            isTriggered = false;
         }
     }
 
