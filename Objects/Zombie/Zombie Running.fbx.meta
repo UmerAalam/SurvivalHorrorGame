@@ -156,7 +156,27 @@ ModelImporter:
     7400000: mixamo.com
     9500000: //RootNode
     13700000: WorldWar_zombie
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WorldWar_zombie_material
+    second: {fileID: 2100000, guid: 76ed6eab7276727419f4dfbb32396a14, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: world_war_zombie_diffuse
+    second: {fileID: 2800000, guid: 0162abe9f6194c94486e1d2377d9fea4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: world_war_zombie_normal
+    second: {fileID: 2800000, guid: 05057f09e0c6e1947851285c74a8602d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: world_war_zombie_specular
+    second: {fileID: 2800000, guid: 832d5643be99d3f4fae065d0ecaa0347, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
