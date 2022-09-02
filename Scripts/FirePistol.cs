@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class FirePistol : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    [SerializeField] GameObject theGun;
+    [SerializeField] GameObject muzzleFlash;
+    [SerializeField] AudioSource shoot;
+    bool isFiring = false;
     void Update()
     {
-        
+        if(Input.GetButtonDown("Fire1"))
+        {
+            if(isFiring == false)
+            {
+                StartCoroutine(FiringPistol());
+            }
+        }
+    }
+    IEnumerator FiringPistol()
+    {
+        isFiring = true;
+        theGun.GetComponent<Animation>().Play("Shoot");
+        muzzleFlash.SetActive(true);
     }
 }
