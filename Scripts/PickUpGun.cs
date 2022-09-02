@@ -12,6 +12,7 @@ public class PickUpGun : MonoBehaviour
     public GameObject RealPistol;
     public GameObject GuideArrow;
     public GameObject ExtraCross;
+    public GameObject jumpTrigger;
 
     void Update()
     {
@@ -38,6 +39,7 @@ public class PickUpGun : MonoBehaviour
                 RealPistol.SetActive(true);
                 ExtraCross.SetActive(false);
                 GuideArrow.SetActive(false);
+                jumpTrigger.SetActive(true);
             }
         }
     }
