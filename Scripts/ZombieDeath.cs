@@ -7,10 +7,14 @@ public class ZombieDeath : MonoBehaviour
     [SerializeField] int enemyHealth = 5;
     [SerializeField] GameObject theEnemy;
     int statusCheck = 0;
-
-    void DeathZombie(int damageAmount)
+    private void Start()
+    {
+        theEnemy.GetComponent<Animation>().Play("Walk");
+    }
+    public void ZombieKilled(int damageAmount)
     {
         enemyHealth -= damageAmount;
+        Debug.Log(enemyHealth);
     }
     void Update()
     {
