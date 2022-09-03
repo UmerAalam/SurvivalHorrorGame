@@ -44,8 +44,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.9245867, y: 4.3018913, z: 0.20000032}
+  m_Center: {x: 0.8872939, y: 0.029306585, z: -0.00000014901151}
 --- !u!111 &1238299971
 Animation:
   m_ObjectHideFlags: 0
@@ -59,7 +59,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: ecd015c6180cf674f83cf7289e9784b1, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!1 &7321153857519966960

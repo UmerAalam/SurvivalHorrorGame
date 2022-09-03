@@ -17,7 +17,6 @@ public class BFirstTrigger : MonoBehaviour
     }
     IEnumerator ScenePlayer()
     {
-        Debug.Log("I called ScenePlayer Function!");
         textBox.GetComponent<Text>().text = "Look like a weapon on table";
         yield return new WaitForSeconds(2.5f);
         textBox.GetComponent<Text>().text = "";

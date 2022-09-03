@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class ZombieDeath : MonoBehaviour
 {
+    public static ZombieDeath instance;
     [SerializeField] int enemyHealth = 5;
     [SerializeField] GameObject theEnemy;
+    [SerializeField] AudioSource jumpScareSound;
     int statusCheck = 0;
     private void Start()
-    {
-        Debug.Log(statusCheck);
-        theEnemy.GetComponent<Animation>().Play("Walk");
+    { 
+        instance = this;
     }
     public void ZombieKilled(int damageAmount)
     {
@@ -21,10 +22,11 @@ public class ZombieDeath : MonoBehaviour
     {
         if(enemyHealth <= 0 && statusCheck == 0)
         {
-            Debug.Log("Hit a Bullet Enemy!");
             statusCheck = 2;
             theEnemy.GetComponent<Animation>().Stop("Walk");
             theEnemy.GetComponent<Animation>().Play("ZombieDeath");
+            theEnemy.GetComponent<BoxCollider>().enabled = false;
+            jumpScareSound.Stop();
         }
     }
 }

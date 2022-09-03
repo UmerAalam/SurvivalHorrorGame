@@ -12,6 +12,7 @@ public class BZJumpTrigger : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         GetComponent<BoxCollider>().enabled = false;
+        theDoor.GetComponent<BoxCollider>().enabled = false;
         theDoor.GetComponent<Animation>().Play("ZombieDoorOpen");
         doorBang.Play();
         theZombie.SetActive(true);

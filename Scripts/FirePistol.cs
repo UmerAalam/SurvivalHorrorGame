@@ -26,8 +26,7 @@ public class FirePistol : MonoBehaviour
         if(Physics.Raycast(transform.position,transform.TransformDirection(Vector3.forward),out shoot))
         {
             targetDistance = shoot.distance;
-            shoot.transform.SendMessage("ZombieKilled",damageAmount,SendMessageOptions.DontRequireReceiver);
-            Debug.Log("Shoot a bullet Enemy!");
+            ZombieDeath.instance.ZombieKilled(damageAmount);
         }
         isFiring = true;
         theGun.GetComponent<Animation>().Play("Shoot");
