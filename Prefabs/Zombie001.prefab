@@ -504,6 +504,9 @@ GameObject:
   - component: {fileID: 317011491}
   - component: {fileID: 5374801934872362723}
   - component: {fileID: 1593965079550551212}
+  - component: {fileID: 5017185355135006350}
+  - component: {fileID: 585759993010577782}
+  - component: {fileID: 3749473620646189307}
   m_Layer: 0
   m_Name: Zombie001
   m_TagString: Untagged
@@ -540,6 +543,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: e2d9f8dfcfd5d3e49a01250009c310ca, type: 2}
   - {fileID: 7400000, guid: e7f6fe009862d824bb8d30d704d28b34, type: 2}
+  - {fileID: 7400000, guid: 61e28b2ab307c514da09a746d7e3eb97, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -556,9 +560,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 833f1a77248900b4390261e37c79740d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 5
+  enemyHealth: 20
   theEnemy: {fileID: 9175171892130203241}
+  jumpScareSound: {fileID: 0}
 --- !u!65 &1593965079550551212
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175171892130203241}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6795996, y: 1.7126813, z: 0.740957}
+  m_Center: {x: 0.005934, y: 0.8463094, z: 0.22079906}
+--- !u!114 &5017185355135006350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175171892130203241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42db366fb17aaa547acdbf4c58abe79a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 0}
+  theEnemy: {fileID: 9175171892130203241}
+  enemySpeed: 0.01
+--- !u!54 &585759993010577782
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175171892130203241}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 80
+  m_CollisionDetection: 1
+--- !u!65 &3749473620646189307
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -569,8 +618,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.7126813, z: 0.7884233}
-  m_Center: {x: 5.1821645e-16, y: 0.8463094, z: 0.16146621}
+  m_Size: {x: 0.34486946, y: 1.6551292, z: 0.6114643}
+  m_Center: {x: 0.036612757, y: 0.8175334, z: 0.15605268}
 --- !u!1 &9175171892130203243
 GameObject:
   m_ObjectHideFlags: 0

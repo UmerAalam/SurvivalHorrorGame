@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ZombieAI : MonoBehaviour
 {
-    public GameObject thePlayer;
-    public GameObject theEnemy;
-    public float enemySpeed = 0.01f;
-    public bool attackTrigger = false;
-    public bool isAttacking = false;
+    [SerializeField] GameObject thePlayer;
+    [SerializeField] GameObject theEnemy;
+    [SerializeField] float enemySpeed = 0.01f;
+    bool attackTrigger = false;
+    bool isAttacking = false;
 
     void Update()
     {
@@ -16,26 +16,28 @@ public class ZombieAI : MonoBehaviour
         if (attackTrigger == false)
         {
             enemySpeed = 0.01f;
-            theEnemy.GetComponent<Animation>().Play("walk");
+            theEnemy.GetComponent<Animation>().Play("Walk");
             transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, enemySpeed);
         }
         if (attackTrigger == true && isAttacking == false)
         {
             enemySpeed = 0;
-            theEnemy.GetComponent<Animation>().Play("attack");
+            theEnemy.GetComponent<Animation>().Play("ZombieScream");
             StartCoroutine(InflictDamage());
         }
 
     }
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider other)
     {
+        if(other.gameObject.CompareTag("Player"))
         attackTrigger = true;
     }
 
-    void OnTriggerExit()
+    void OnTriggerExit(Collider other)
     {
-        attackTrigger = false;
+        if (other.gameObject.CompareTag("Player"))
+            attackTrigger = false;
     }
 
 

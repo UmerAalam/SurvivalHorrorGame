@@ -6652,6 +6652,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8187588757043919055}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &789628249
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789628242}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8691537, y: 1.9901454, z: 1.9901462}
+  m_Center: {x: 0.1363982, y: 0.00000011920929, z: -0.00000023841858}
 --- !u!1 &805989125
 GameObject:
   m_ObjectHideFlags: 0
@@ -13905,6 +13918,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPSController
       objectReference: {fileID: 0}
+    - target: {fileID: 8187588757106242454, guid: b3276f6109147d2488aa40ade072caa3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
 --- !u!1001 &9175171892363194443
@@ -13914,30 +13932,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 628703068}
     m_Modifications:
+    - target: {fileID: 1593965079550551212, guid: d2a7af2b5b1833745a5da30cfcc2a557,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5017185355135006350, guid: d2a7af2b5b1833745a5da30cfcc2a557,
+        type: 3}
+      propertyPath: thePlayer
+      value: 
+      objectReference: {fileID: 789628242}
     - target: {fileID: 5374801934872362723, guid: d2a7af2b5b1833745a5da30cfcc2a557,
         type: 3}
       propertyPath: jumpScareSound
       value: 
       objectReference: {fileID: 1513578883}
-    - target: {fileID: 5374801934872362723, guid: d2a7af2b5b1833745a5da30cfcc2a557,
-        type: 3}
-      propertyPath: enemyHealth
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 9175171892130203241, guid: d2a7af2b5b1833745a5da30cfcc2a557,
         type: 3}
       propertyPath: m_Name
       value: Zombie001
       objectReference: {fileID: 0}
+    - target: {fileID: 9175171892130203241, guid: d2a7af2b5b1833745a5da30cfcc2a557,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9175171892130503241, guid: d2a7af2b5b1833745a5da30cfcc2a557,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.63
+      value: -15.52
       objectReference: {fileID: 0}
     - target: {fileID: 9175171892130503241, guid: d2a7af2b5b1833745a5da30cfcc2a557,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.169
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 9175171892130503241, guid: d2a7af2b5b1833745a5da30cfcc2a557,
         type: 3}
@@ -13983,6 +14011,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175171892130503243, guid: d2a7af2b5b1833745a5da30cfcc2a557,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.61
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a7af2b5b1833745a5da30cfcc2a557, type: 3}
