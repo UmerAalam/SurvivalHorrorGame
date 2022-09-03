@@ -13791,7 +13791,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theGun: {fileID: 6107209050857503008}
   muzzleFlash: {fileID: 52219671}
-  shoot: {fileID: 840250858}
+  shootSound: {fileID: 840250858}
+  damageAmount: 5
 --- !u!1001 &7321153857138445986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13883,7 +13884,7 @@ PrefabInstance:
     - target: {fileID: 2693437206730424815, guid: b3276f6109147d2488aa40ade072caa3,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8187588757106143158, guid: b3276f6109147d2488aa40ade072caa3,
         type: 3}
@@ -13956,16 +13957,28 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 317011491, guid: d2a7af2b5b1833745a5da30cfcc2a557, type: 3}
       propertyPath: m_Animations.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 317011491, guid: d2a7af2b5b1833745a5da30cfcc2a557, type: 3}
       propertyPath: m_Animation
       value: 
-      objectReference: {fileID: 7400000, guid: a0076a22f8c85514392f3af674adb38c, type: 3}
+      objectReference: {fileID: 7400000, guid: e2d9f8dfcfd5d3e49a01250009c310ca, type: 2}
     - target: {fileID: 317011491, guid: d2a7af2b5b1833745a5da30cfcc2a557, type: 3}
       propertyPath: m_Animations.Array.data[0]
       value: 
+      objectReference: {fileID: 7400000, guid: e2d9f8dfcfd5d3e49a01250009c310ca, type: 2}
+    - target: {fileID: 317011491, guid: d2a7af2b5b1833745a5da30cfcc2a557, type: 3}
+      propertyPath: m_Animations.Array.data[1]
+      value: 
+      objectReference: {fileID: 7400000, guid: e7f6fe009862d824bb8d30d704d28b34, type: 2}
+    - target: {fileID: 317011491, guid: d2a7af2b5b1833745a5da30cfcc2a557, type: 3}
+      propertyPath: m_Animations.Array.data[2]
+      value: 
       objectReference: {fileID: 7400000, guid: a0076a22f8c85514392f3af674adb38c, type: 3}
+    - target: {fileID: 317011491, guid: d2a7af2b5b1833745a5da30cfcc2a557, type: 3}
+      propertyPath: m_PlayAutomatically
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9175171892130203241, guid: d2a7af2b5b1833745a5da30cfcc2a557,
         type: 3}
       propertyPath: m_Name
