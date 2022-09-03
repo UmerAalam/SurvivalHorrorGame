@@ -27,6 +27,7 @@ public class FirePistol : MonoBehaviour
         {
             targetDistance = shoot.distance;
             shoot.transform.SendMessage("DeathZombie",damageAmount,SendMessageOptions.DontRequireReceiver);
+            Debug.Log("Shoot a bullet Enemy!");
         }
         isFiring = true;
         theGun.GetComponent<Animation>().Play("Shoot");
