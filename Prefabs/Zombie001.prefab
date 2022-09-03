@@ -503,6 +503,7 @@ GameObject:
   - component: {fileID: 9175171892130503241}
   - component: {fileID: 317011491}
   - component: {fileID: 5374801934872362723}
+  - component: {fileID: 1593965079550551212}
   m_Layer: 0
   m_Name: Zombie001
   m_TagString: Untagged
@@ -557,6 +558,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 5
   theEnemy: {fileID: 9175171892130203241}
+--- !u!65 &1593965079550551212
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175171892130203241}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.7126813, z: 0.7884233}
+  m_Center: {x: 5.1821645e-16, y: 0.8463094, z: 0.16146621}
 --- !u!1 &9175171892130203243
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class ZombieDeath : MonoBehaviour
     int statusCheck = 0;
     private void Start()
     {
+        Debug.Log(statusCheck);
         theEnemy.GetComponent<Animation>().Play("Walk");
     }
     public void ZombieKilled(int damageAmount)
