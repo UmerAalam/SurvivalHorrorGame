@@ -7,6 +7,7 @@ public class ZombieAI : MonoBehaviour
     [SerializeField] GameObject thePlayer;
     [SerializeField] GameObject theEnemy;
     [SerializeField] float enemySpeed = 0.01f;
+    [SerializeField] AudioSource[] hurtSounds;
     bool attackTrigger = false;
     bool isAttacking = false;
 
@@ -44,9 +45,10 @@ public class ZombieAI : MonoBehaviour
     IEnumerator InflictDamage()
     {
         isAttacking = true;
+        hurtSounds[Random.Range(0, hurtSounds.Length)].Play();
         yield return new WaitForSeconds(1.1f);
         GlobalHealth.currentHealth -= 5;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.9f);
         isAttacking = false;
     }
 }

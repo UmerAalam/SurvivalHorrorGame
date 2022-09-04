@@ -5192,6 +5192,18 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 8187588757043919055}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &218633492 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 218633492, guid: b3276f6109147d2488aa40ade072caa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8187588757043919055}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &239759071 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 239759071, guid: b3276f6109147d2488aa40ade072caa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8187588757043919055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &242353460
 GameObject:
   m_ObjectHideFlags: 0
@@ -5223,6 +5235,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &253147751 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 253147751, guid: b3276f6109147d2488aa40ade072caa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8187588757043919055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &261782242
 GameObject:
   m_ObjectHideFlags: 0
@@ -6652,19 +6670,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8187588757043919055}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &789628249
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 789628242}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.8691537, y: 1.9901454, z: 1.9901462}
-  m_Center: {x: 0.1363982, y: 0.00000011920929, z: -0.00000023841858}
 --- !u!1 &805989125
 GameObject:
   m_ObjectHideFlags: 0
@@ -13854,9 +13859,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1513578881, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
-      propertyPath: m_Name
-      value: JumpScaredMusic
+    - target: {fileID: 789628249, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
+      propertyPath: m_Size.x
+      value: 1.7078416
+      objectReference: {fileID: 0}
+    - target: {fileID: 789628249, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
+      propertyPath: m_Center.x
+      value: 0.041578174
+      objectReference: {fileID: 0}
+    - target: {fileID: 789628249, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
+      propertyPath: m_Size.z
+      value: 1.0376322
+      objectReference: {fileID: 0}
+    - target: {fileID: 789628249, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
+      propertyPath: m_Center.z
+      value: -0.022445798
+      objectReference: {fileID: 0}
+    - target: {fileID: 789628249, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.928355
+      objectReference: {fileID: 0}
+    - target: {fileID: 789628249, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
+      propertyPath: m_Center.y
+      value: -0.030895114
       objectReference: {fileID: 0}
     - target: {fileID: 8187588757106143158, guid: b3276f6109147d2488aa40ade072caa3,
         type: 3}
@@ -13918,11 +13943,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPSController
       objectReference: {fileID: 0}
-    - target: {fileID: 8187588757106242454, guid: b3276f6109147d2488aa40ade072caa3,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
 --- !u!1001 &9175171892363194443
@@ -13939,9 +13959,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5017185355135006350, guid: d2a7af2b5b1833745a5da30cfcc2a557,
         type: 3}
+      propertyPath: hurtSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5017185355135006350, guid: d2a7af2b5b1833745a5da30cfcc2a557,
+        type: 3}
       propertyPath: thePlayer
       value: 
       objectReference: {fileID: 789628242}
+    - target: {fileID: 5017185355135006350, guid: d2a7af2b5b1833745a5da30cfcc2a557,
+        type: 3}
+      propertyPath: hurtSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 218633492}
+    - target: {fileID: 5017185355135006350, guid: d2a7af2b5b1833745a5da30cfcc2a557,
+        type: 3}
+      propertyPath: hurtSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 253147751}
+    - target: {fileID: 5017185355135006350, guid: d2a7af2b5b1833745a5da30cfcc2a557,
+        type: 3}
+      propertyPath: hurtSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 239759071}
     - target: {fileID: 5374801934872362723, guid: d2a7af2b5b1833745a5da30cfcc2a557,
         type: 3}
       propertyPath: jumpScareSound

@@ -6,7 +6,7 @@ public class GlobalHealth : MonoBehaviour
 {
 
     public static int currentHealth = 20;
-    public int internalHealth;
+    int internalHealth;
 
     void Update()
     {
