@@ -22,6 +22,7 @@ public class ZombieDeath : MonoBehaviour
     {
         if(enemyHealth <= 0 && statusCheck == 0)
         {
+            this.GetComponent<ZombieAI>().enabled = false;
             statusCheck = 2;
             theEnemy.GetComponent<Animation>().Stop("Walk");
             theEnemy.GetComponent<Animation>().Stop("ZombieScream");

@@ -13745,6 +13745,41 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 6107209050695045212, guid: b590a87de3bdbd64d890ea9cd70dd0dd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.04614793
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107209050695045212, guid: b590a87de3bdbd64d890ea9cd70dd0dd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.3505287
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107209050695045212, guid: b590a87de3bdbd64d890ea9cd70dd0dd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.62112665
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107209050695045212, guid: b590a87de3bdbd64d890ea9cd70dd0dd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.69942945
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107209050695045212, guid: b590a87de3bdbd64d890ea9cd70dd0dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107209050695045212, guid: b590a87de3bdbd64d890ea9cd70dd0dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107209050695045212, guid: b590a87de3bdbd64d890ea9cd70dd0dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6107209050695045213, guid: b590a87de3bdbd64d890ea9cd70dd0dd,
         type: 3}
       propertyPath: m_IsTrigger
@@ -13952,16 +13987,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 628703068}
     m_Modifications:
-    - target: {fileID: 1593965079550551212, guid: d2a7af2b5b1833745a5da30cfcc2a557,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5017185355135006350, guid: d2a7af2b5b1833745a5da30cfcc2a557,
-        type: 3}
-      propertyPath: hurtSounds.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 5017185355135006350, guid: d2a7af2b5b1833745a5da30cfcc2a557,
         type: 3}
       propertyPath: thePlayer
@@ -13991,11 +14016,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie001
-      objectReference: {fileID: 0}
-    - target: {fileID: 9175171892130203241, guid: d2a7af2b5b1833745a5da30cfcc2a557,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9175171892130503241, guid: d2a7af2b5b1833745a5da30cfcc2a557,
         type: 3}
@@ -14051,11 +14071,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9175171892130503243, guid: d2a7af2b5b1833745a5da30cfcc2a557,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.61
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a7af2b5b1833745a5da30cfcc2a557, type: 3}
