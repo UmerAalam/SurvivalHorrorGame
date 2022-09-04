@@ -16,7 +16,6 @@ public class ZombieDeath : MonoBehaviour
     public void ZombieKilled(int damageAmount)
     {
         enemyHealth -= damageAmount;
-        Debug.Log(enemyHealth);
     }
     void Update()
     {

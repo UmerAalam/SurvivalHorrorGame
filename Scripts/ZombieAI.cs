@@ -48,6 +48,7 @@ public class ZombieAI : MonoBehaviour
         hurtSounds[Random.Range(0, hurtSounds.Length)].Play();
         yield return new WaitForSeconds(1.1f);
         GlobalHealth.currentHealth -= 5;
+        Debug.Log(GlobalHealth.currentHealth);
         yield return new WaitForSeconds(0.9f);
         isAttacking = false;
     }
