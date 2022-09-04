@@ -10,7 +10,8 @@ public class ZombieDeath : MonoBehaviour
     [SerializeField] AudioSource jumpScareSound;
     int statusCheck = 0;
     private void Start()
-    { 
+    {
+        statusCheck = 0;
         instance = this;
     }
     public void ZombieKilled(int damageAmount)
@@ -23,6 +24,7 @@ public class ZombieDeath : MonoBehaviour
         {
             statusCheck = 2;
             theEnemy.GetComponent<Animation>().Stop("Walk");
+            theEnemy.GetComponent<Animation>().Stop("ZombieScream");
             theEnemy.GetComponent<Animation>().Play("ZombieDeath");
             theEnemy.GetComponent<BoxCollider>().enabled = false;
             jumpScareSound.Stop();
