@@ -23,11 +23,11 @@ public class ZombieDeath : MonoBehaviour
         if(enemyHealth <= 0 && statusCheck == 0)
         {
             this.GetComponent<ZombieAI>().enabled = false;
+            this.GetComponent<BoxCollider>().enabled = false;
             statusCheck = 2;
             theEnemy.GetComponent<Animation>().Stop("Walk");
             theEnemy.GetComponent<Animation>().Stop("ZombieScream");
             theEnemy.GetComponent<Animation>().Play("ZombieDeath");
-            theEnemy.GetComponent<BoxCollider>().enabled = false;
             jumpScareSound.Stop();
         }
     }
