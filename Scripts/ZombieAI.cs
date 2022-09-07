@@ -6,6 +6,7 @@ public class ZombieAI : MonoBehaviour
 {
     [SerializeField] GameObject thePlayer;
     [SerializeField] GameObject theEnemy;
+    [SerializeField] GameObject flash;
     [SerializeField] float enemySpeed = 0.01f;
     [SerializeField] AudioSource[] hurtSounds;
     bool attackTrigger = false;
@@ -46,7 +47,10 @@ public class ZombieAI : MonoBehaviour
     {
         isAttacking = true;
         hurtSounds[Random.Range(0, hurtSounds.Length)].Play();
-        yield return new WaitForSeconds(1.1f);
+        flash.SetActive(true);
+        yield return new WaitForSeconds(0.4f);
+        flash.SetActive(false);
+        yield return new WaitForSeconds(0.7f);
         GlobalHealth.currentHealth -= 5;
         Debug.Log(GlobalHealth.currentHealth);
         yield return new WaitForSeconds(0.9f);
