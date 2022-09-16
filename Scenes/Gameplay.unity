@@ -5242,6 +5242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorBang: {fileID: 1789192877}
   doorMusic: {fileID: 1513578883}
+  ambSound: {fileID: 1344526716}
   theDoor: {fileID: 1238299968}
   theZombie: {fileID: 317011490}
 --- !u!4 &153935959
@@ -8365,6 +8366,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327047472}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &1344526716 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1344526716, guid: b3276f6109147d2488aa40ade072caa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8187588757043919055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1362719802
 GameObject:
   m_ObjectHideFlags: 0
@@ -15260,30 +15267,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 789628249, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
-      propertyPath: m_Size.x
-      value: 1.7078416
-      objectReference: {fileID: 0}
-    - target: {fileID: 789628249, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
-      propertyPath: m_Center.x
-      value: 0.041578174
-      objectReference: {fileID: 0}
-    - target: {fileID: 789628249, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
-      propertyPath: m_Size.z
-      value: 1.0376322
-      objectReference: {fileID: 0}
-    - target: {fileID: 789628249, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
-      propertyPath: m_Center.z
-      value: -0.022445798
-      objectReference: {fileID: 0}
-    - target: {fileID: 789628249, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
-      propertyPath: m_Size.y
-      value: 1.928355
-      objectReference: {fileID: 0}
-    - target: {fileID: 789628249, guid: b3276f6109147d2488aa40ade072caa3, type: 3}
-      propertyPath: m_Center.y
-      value: -0.030895114
-      objectReference: {fileID: 0}
     - target: {fileID: 8187588757106143158, guid: b3276f6109147d2488aa40ade072caa3,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -6,6 +6,7 @@ public class BZJumpTrigger : MonoBehaviour
 {
     [SerializeField] AudioSource doorBang;
     [SerializeField] AudioSource doorMusic;
+    [SerializeField] AudioSource ambSound;
     [SerializeField] GameObject theDoor;
     [SerializeField] GameObject theZombie;
 
@@ -21,6 +22,7 @@ public class BZJumpTrigger : MonoBehaviour
     IEnumerator PlayJumpMusic()
     {
         yield return new WaitForSeconds(0.4f);
+        ambSound.Stop();
         doorMusic.Play();
     }
 }

@@ -7,6 +7,7 @@ public class ZombieDeath : MonoBehaviour
     public static ZombieDeath instance;
     [SerializeField] int enemyHealth = 5;
     [SerializeField] GameObject theEnemy;
+    [SerializeField] AudioSource ambSound;
     [SerializeField] AudioSource jumpScareSound;
     int statusCheck = 0;
     private void Start()
@@ -29,6 +30,7 @@ public class ZombieDeath : MonoBehaviour
             theEnemy.GetComponent<Animation>().Stop("ZombieScream");
             theEnemy.GetComponent<Animation>().Play("ZombieDeath");
             jumpScareSound.Stop();
+            ambSound.Play();
         }
     }
 }
