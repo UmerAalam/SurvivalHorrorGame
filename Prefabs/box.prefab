@@ -58,6 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoBox: {fileID: 6625656148964500549}
+  ammoDisplayPanel: {fileID: 0}
 --- !u!1 &6625656148964500545
 GameObject:
   m_ObjectHideFlags: 0
