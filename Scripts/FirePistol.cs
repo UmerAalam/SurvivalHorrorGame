@@ -14,7 +14,7 @@ public class FirePistol : MonoBehaviour
     {
         if(Input.GetButtonDown("Fire1"))
         {
-            if(isFiring == false)
+            if(isFiring == false && GlobalAmmo.ammoCount >= 1)
             {
                 StartCoroutine(FiringPistol());
             }

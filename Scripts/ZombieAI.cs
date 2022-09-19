@@ -7,7 +7,7 @@ public class ZombieAI : MonoBehaviour
     [SerializeField] GameObject thePlayer;
     [SerializeField] GameObject theEnemy;
     [SerializeField] GameObject flash;
-    [SerializeField] float enemySpeed = 0.01f;
+    [SerializeField] float enemySpeed = 0.04f;
     [SerializeField] AudioSource[] hurtSounds;
     bool attackTrigger = false;
     bool isAttacking = false;
@@ -17,7 +17,7 @@ public class ZombieAI : MonoBehaviour
         transform.LookAt(thePlayer.transform);
         if (attackTrigger == false)
         {
-            enemySpeed = 0.01f;
+            enemySpeed = 0.04f;
             theEnemy.GetComponent<Animation>().Play("Walk");
             transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, enemySpeed);
         }
