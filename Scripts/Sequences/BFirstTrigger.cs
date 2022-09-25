@@ -9,6 +9,7 @@ public class BFirstTrigger : MonoBehaviour
     [SerializeField] GameObject thePlayer;
     [SerializeField] GameObject textBox;
     [SerializeField] GameObject guideArrow;
+    [SerializeField] AudioSource lookWeapon;
     bool isTriggered;
 
     private void Start()
@@ -17,6 +18,7 @@ public class BFirstTrigger : MonoBehaviour
     }
     IEnumerator ScenePlayer()
     {
+        lookWeapon.Play();
         textBox.GetComponent<Text>().text = "Look like a weapon on table";
         yield return new WaitForSeconds(2.5f);
         textBox.GetComponent<Text>().text = "";
