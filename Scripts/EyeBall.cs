@@ -5,7 +5,6 @@ using UnityEngine;
 public class EyeBall : MonoBehaviour
 {
     Vector3 mousePosition;
-
     private void Update()
     {
         mousePosition = Camera.main.ScreenToViewportPoint(Input.mousePosition);
