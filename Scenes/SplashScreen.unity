@@ -342,10 +342,12 @@ Animation:
   m_GameObject: {fileID: 741464812}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
+  m_Animation: {fileID: 7400000, guid: 1f1dfea8a80eb824092ef8b0b8db5932, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 1f1dfea8a80eb824092ef8b0b8db5932, type: 2}
+  - {fileID: 7400000, guid: 917774e22221d0c4b880138a0572206f, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!1 &866369869
@@ -492,6 +494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315ac878c9a3b6742b433550e237992c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  logo: {fileID: 741464816}
+  horrorGameText: {fileID: 1895571410}
 --- !u!1 &977025588
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,22 +710,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895571406}
   m_CullTransparentMesh: 0
---- !u!95 &1895571410
-Animator:
-  serializedVersion: 3
+--- !u!111 &1895571410
+Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895571406}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d186c7791d5af5e47b5f082378e89865, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 71e21a77f9513114d9bbbc28fdcd6496, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 71e21a77f9513114d9bbbc28fdcd6496, type: 2}
+  - {fileID: 7400000, guid: b016cff1ecea4d542a78b967d4b2f1ae, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0

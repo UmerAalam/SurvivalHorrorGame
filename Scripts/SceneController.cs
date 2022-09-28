@@ -5,23 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public static SceneController instance;
+    [SerializeField] Animation logo;
+    [SerializeField] Animation horrorGameText;
 
     private void Awake()
     {
-        if(instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
         StartCoroutine(SplashScreen());
     }
     public IEnumerator SplashScreen()
     {
+        logo.Play("Intro");
+        horrorGameText.Play("IntroHorrorGame");
         yield return new WaitForSeconds(3f);
+        logo.Play("Outro");
+        horrorGameText.Play("OutroHorrorGame");
+        yield return new WaitForSeconds(1.1f);
         SceneManager.LoadScene("Main_Menu");
     }
 }
