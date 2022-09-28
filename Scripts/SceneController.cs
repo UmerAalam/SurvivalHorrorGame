@@ -19,7 +19,7 @@ public class SceneController : MonoBehaviour
         yield return new WaitForSeconds(3f);
         logo.Play("Outro");
         horrorGameText.Play("OutroHorrorGame");
-        yield return new WaitForSeconds(1.1f);
+        yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene("Main_Menu");
     }
 }
