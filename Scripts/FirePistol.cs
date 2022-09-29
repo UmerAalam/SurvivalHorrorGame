@@ -10,7 +10,7 @@ public class FirePistol : MonoBehaviour
     [SerializeField] int damageAmount = 5;
     float targetDistance;
     bool isFiring = false;
-
+    float verticalInput;
     void Update()
     {
         if(Input.GetButtonDown("Fire1"))
@@ -20,6 +20,8 @@ public class FirePistol : MonoBehaviour
                 StartCoroutine(FiringPistol());
             }
         }
+        GetInput();
+        SetAnimations();
     }
     IEnumerator FiringPistol()
     {
@@ -31,11 +33,38 @@ public class FirePistol : MonoBehaviour
         }
         isFiring = true;
         GlobalAmmo.ammoCount -= 1;
+        theGun.GetComponent<Animation>().Stop("Pistoldle");
+        theGun.GetComponent<Animation>().Stop("PistolWhileMoving");
         theGun.GetComponent<Animation>().Play("Shoot");
         muzzleFlash.SetActive(true);
         muzzleFlash.GetComponent<Animation>().Play("MuzzleFlash");
         shootSound.Play();
         yield return new WaitForSeconds(0.5f);
         isFiring = false;
+    }
+    void GetInput()
+    {
+        verticalInput = Input.GetAxisRaw("Vertical");
+    }
+    void SetAnimations()
+    {
+        if(verticalInput > 0)
+        {
+            theGun.GetComponent<Animation>().Stop("Shoot");
+            theGun.GetComponent<Animation>().Stop("Pistoldle");
+            theGun.GetComponent<Animation>().Play("PistolWhileMoving");
+        }
+        if (verticalInput < 0)
+        {
+            theGun.GetComponent<Animation>().Stop("Shoot");
+            theGun.GetComponent<Animation>().Stop("Pistoldle");
+            theGun.GetComponent<Animation>().Play("PistolWhileMoving");
+        }
+        if (verticalInput == 0)
+        {
+            theGun.GetComponent<Animation>().Stop("Shoot");
+            theGun.GetComponent<Animation>().Stop("PistolWhileMoving");
+            theGun.GetComponent<Animation>().Play("Pistoldle");
+        }
     }
 }

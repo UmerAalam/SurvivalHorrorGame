@@ -15354,7 +15354,7 @@ PrefabInstance:
     - target: {fileID: 2693437206730333647, guid: b3276f6109147d2488aa40ade072caa3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 1.0721359
       objectReference: {fileID: 0}
     - target: {fileID: 2693437206730333647, guid: b3276f6109147d2488aa40ade072caa3,
         type: 3}
@@ -15391,6 +15391,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.853
       objectReference: {fileID: 0}
+    - target: {fileID: 2693437206730424815, guid: b3276f6109147d2488aa40ade072caa3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4380324992966567647, guid: b3276f6109147d2488aa40ade072caa3,
         type: 3}
       propertyPath: m_Animations.Array.size
@@ -15409,7 +15414,7 @@ PrefabInstance:
     - target: {fileID: 4380324992966567647, guid: b3276f6109147d2488aa40ade072caa3,
         type: 3}
       propertyPath: m_PlayAutomatically
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4380324992966567647, guid: b3276f6109147d2488aa40ade072caa3,
         type: 3}
